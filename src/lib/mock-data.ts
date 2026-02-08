@@ -20,6 +20,7 @@ export interface Brand {
     name: string;
     slug: string;
     logoUrl: string;
+    description?: string;
 }
 
 export interface Product {
@@ -68,14 +69,62 @@ export const mockCategories: Category[] = [
 ];
 
 export const mockBrands: Brand[] = [
-    { id: 'b-scg', name: 'SCG', slug: 'scg', logoUrl: '/icon/logo.jpg' },
-    { id: 'b-shera', name: 'Shera', slug: 'shera', logoUrl: 'https://www.shera.com/images/default-source/logos/shera-logo.png' },
-    { id: 'b-toa', name: 'TOA', slug: 'toa', logoUrl: 'https://res.cloudinary.com/toa-group/image/upload/v1589172421/common/toa-logo.png' },
-    { id: 'b-tpi', name: 'TPI', slug: 'tpi', logoUrl: 'https://www.tpipolene.co.th/images/logo.png' },
-    { id: 'b-dos', name: 'DOS', slug: 'dos', logoUrl: 'https://www.dos.co.th/images/logo.png' },
-    { id: 'b-ison', name: 'Ison', slug: 'ison', logoUrl: 'https://ison.co.th/wp-content/uploads/2021/08/logo-ison.png' },
-    { id: 'b-bosny', name: 'Bosny', slug: 'bosny', logoUrl: 'https://www.bosny.com/images/logo.png' },
-    { id: 'b-tipco', name: 'Tipco', slug: 'tipco', logoUrl: 'https://www.tipcoasphalt.com/wp-content/themes/tipcoasphalt/images/logo.png' },
+    {
+        id: 'b-scg',
+        name: 'SCG',
+        slug: 'scg',
+        logoUrl: '/logo_product/scg.jpg',
+        description: 'ผู้นำนวัตกรรมวัสดุก่อสร้างครบวงจร มาตรฐานระดับสากล มั่นใจในคุณภาพและความทนทาน'
+    },
+    {
+        id: 'b-shera',
+        name: 'Shera',
+        slug: 'shera',
+        logoUrl: '/logo_product/shera.png',
+        description: 'ที่หนึ่งเรื่องไฟเบอร์ซีเมนต์ นวัตกรรมไม้เทียมสวยงามทนทาน ปลวกไม่กิน ทนทุกสภาวะอากาศ'
+    },
+    {
+        id: 'b-toa',
+        name: 'TOA',
+        slug: 'toa',
+        logoUrl: '/logo_product/toa.png',
+        description: 'สีอันดับ 1 ที่ช่างเลือกใช้ นวัตกรรมสีระดับโลก ปกป้องยาวนาน สีสวยทนทานทุกพื้นผิว'
+    },
+    {
+        id: 'b-tpi',
+        name: 'TPI',
+        slug: 'tpi',
+        logoUrl: 'https://www.tpipolene.co.th/images/logo.png',
+        description: 'ผู้ผลิตปูนซีเมนต์คุณภาพเยี่ยม พร้อมนวัตกรรมวัสดุก่อสร้างที่ตอบโจทย์ทุกความต้องการ'
+    },
+    {
+        id: 'b-dos',
+        name: 'DOS',
+        slug: 'dos',
+        logoUrl: '/logo_product/dos.webp',
+        description: 'ผู้นำด้านการจัดการน้ำ ถังเก็บน้ำคุณภาพสูง สะอาด ปลอดภัย ด้วยเทคโนโลยีขั้นสูง'
+    },
+    {
+        id: 'b-ison',
+        name: 'Ison',
+        slug: 'ison',
+        logoUrl: '/logo_product/ison.png',
+        description: 'ผู้เชี่ยวชาญด้านฮาร์ดแวร์ ลูกบิด และกุญแจ แข็งแรง ปลอดภัย มั่นใจในคุณภาพ'
+    },
+    {
+        id: 'b-bosny',
+        name: 'Bosny',
+        slug: 'bosny',
+        logoUrl: '/logo_product/bosny.png',
+        description: 'แบรนด์สีสเปรย์และเคมีภัณฑ์ก่อสร้างระดับสากล นวัตกรรมที่ช่วยให้งานก่อสร้างง่ายขึ้น'
+    },
+    {
+        id: 'b-tipco',
+        name: 'Tipco',
+        slug: 'tipco',
+        logoUrl: '/logo_product/tipco.png',
+        description: 'ผู้นำด้านผลิตภัณฑ์ยางมะตอย คุณภาพเยี่ยมสำหรับการก่อสร้างและซ่อมบำรุงถนน'
+    },
 ];
 
 export const mockProducts: Product[] = [
