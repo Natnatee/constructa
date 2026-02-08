@@ -129,3 +129,9 @@ interface Brand {
 - **Animation**: Framer Motion (Smooth transitions, hover effects)
 - **Typography**: เน้นอ่านง่าย (IBM Plex Sans Thai / Sarabun)
 - **Design Style**: Glassmorphism (subtle), Soft Shadows, Professional Blue
+
+### Admin Credentials
+- **Username**: `admin`
+- **Password**: `123456`
+- **Login Path**: `/admin/login`
+- **Redirect Policy**: ถ้ายังไม่ Login จะเด้งไปหน้า Login อัตโนมัติ
