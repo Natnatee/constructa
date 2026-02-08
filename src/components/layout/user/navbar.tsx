@@ -26,12 +26,16 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      scrolled 
+        ? 'bg-white shadow-md py-1' 
+        : 'bg-white/20 backdrop-blur-md border-b border-white/10 py-2'
+    }`}>
       <div className="container-custom">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="relative h-12 w-48 transition-transform hover:scale-105">
+              <div className="relative h-10 w-40 transition-transform hover:scale-105">
                 <Image 
                   src="/icon/โชติพิพัฒค้าไม้.png" 
                   alt="โชติพิพัฒน์ค้าไม้ จำกัด" 
@@ -49,17 +53,19 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${scrolled ? 'text-gray-700' : 'text-gray-800'}`}
+                className={`text-[16px] font-bold transition-colors hover:text-primary ${
+                  scrolled ? 'text-gray-800' : 'text-gray-900 drop-shadow-md'
+                }`}
               >
                 {item.name}
               </Link>
             ))}
             <Link
-              href="tel:0999999999"
-              className="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-full hover:bg-primary-dark transition-colors"
+              href="tel:0926566264"
+              className="flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full hover:bg-primary-dark transition-all shadow-lg hover:shadow-primary/30"
             >
-              <Phone size={16} />
-              <span>099-999-9999</span>
+              <Phone size={18} />
+              <span className="text-lg font-black tracking-wider">092-656-6264</span>
             </Link>
           </div>
 
