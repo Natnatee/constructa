@@ -1,8 +1,9 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { Menu, X, Phone, ShoppingBag } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 
 const navigation = [
   { name: 'หน้าแรก', href: '/' },
@@ -30,10 +31,15 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <ShoppingBag className="text-white w-6 h-6" />
+              <div className="relative h-12 w-48 transition-transform hover:scale-105">
+                <Image 
+                  src="/icon/โชติพิพัฒค้าไม้.png" 
+                  alt="โชติพิพัฒน์ค้าไม้ จำกัด" 
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
-              <span className={`text-2xl font-bold tracking-tight ${scrolled ? 'text-primary' : 'text-primary'}`}>CONSTRUCTA</span>
             </Link>
           </div>
 
