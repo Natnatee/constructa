@@ -3,6 +3,7 @@ import FeaturedCategories from "@/components/home/featured-categories";
 import FeaturedProducts from "@/components/home/featured-products";
 import TrustFeatures from "@/components/home/trust-features";
 import AboutShortcut from "@/components/home/about-shortcut";
+import BrandsSlider from "@/components/home/brands-slider";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <AboutShortcut />
       <FeaturedCategories />
       <FeaturedProducts />
+      <BrandsSlider />
       <TrustFeatures />
     </div>
   );
