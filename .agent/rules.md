@@ -1,4 +1,4 @@
-# Project Rules - Constructa
+# Project Rules - Constructa (โชติพิพัฒน์ค้าไม้ จำกัด)
 
 ## ภาษา
 - ตอบภาษาไทยเท่านั้น
@@ -76,3 +76,7 @@ pnpm build    # Build for production
 pnpm start    # Start production server
 pnpm lint     # Run ESLint
 ```
+
+## Terminal Usage
+- ห้ามใช้ความสามารถในการรันคำสั่ง (run_command) โดยตรง
+- ให้เสนอรันคำสั่งเป็นข้อความ (Code Block) เพื่อให้ User คัดลอกไปรันใน Terminal เองเท่านั้น
